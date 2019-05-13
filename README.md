@@ -15,3 +15,6 @@ As part of the technical curriculum, you will learn how to model a system, build
 ## Case Study - Stock Visualization Application
 
 Apply the knowledge that you have learned from the modelling, services and UI learning sessions to build a stock visualization application
+
+
+##TEST ANGIE
