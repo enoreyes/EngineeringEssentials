@@ -17,30 +17,16 @@
 package resources;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import pojo.Stock;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.ListIterator;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
 import java.util.SortedMap;
 import java.text.ParseException;
-
-import jdk.nashorn.internal.objects.annotations.Getter;
-
 
 @Path("stock")
 // TODO - add your @Path here
@@ -49,8 +35,6 @@ public class StockResource {
     // TODO - Add a @GET resource to get stock data
     // Your service should return data based on 3 inputs
     // Stock ticker, start date and end date
-
-    private ObjectMapper mapper = new ObjectMapper();
 
     @GET
     @Path("searchTicker")
