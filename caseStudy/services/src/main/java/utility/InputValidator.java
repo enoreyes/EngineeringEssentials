@@ -29,16 +29,18 @@ import pojo.Stock;
  * Utility class to validate inputs
  */
 public class InputValidator {
-	public static HashMap<Company,Stock> hMap;
+	public static HashMap<String,Company> companyMap;
+	public static HashMap<String, Stock> stockMap;
+	JSONArray obj;
 
     // TODO - write a method that will validate your JSON input files
-	public boolean validateJSON(String input) {
+	public boolean validateJSON(String input) throws java.text.ParseException {
 		if (nullCheck(input))
 			return false;
 		if (input.equals("historicalStockData.json")) {
-			return populateStock();
+			return populateStock(input);
 		} else if (input.contentEquals("companyInfo.json")) {
-			return populateCompany();
+			return populateCompany(input);
 		} else
 			return false;		
 	}
@@ -63,13 +65,14 @@ public class InputValidator {
 		return false;
 	}
 	
-	private boolean populateCompany() {
-		JSONArray obj = null;
+	private boolean populateCompany(String input) {
 		try {
-			obj = (JSONArray) new JSONParser().parse(new FileReader("C:\\Users\\clair\\Documents\\EngineeringEssentials\\caseStudy\\services\\src\\main\\java\\utility\\companyInfo.json"));
+			obj = (JSONArray) new JSONParser().parse(new FileReader(input));
 		} catch (IOException e) {
+			System.out.println("IO Exception");
 			return false;
 		} catch (ParseException e) {
+			System.out.println("Parse Exception");
 			return false;
 		}
 		boolean valid = true;
@@ -97,15 +100,49 @@ public class InputValidator {
 				String industry = industryValid ? (String) jobj.get("industry") : null;
 				
 				Company comp = new Company(symbol, name, hqCity, hqState, numEmployees, sector, industry);
-				hMap.put(comp, null);
+				companyMap.put(symbol,comp);
 			}
 		}
 		return valid;
 	}
 	
-	private boolean populateStock() {
+	private boolean populateStock(String input) throws java.text.ParseException {
+		try {
+			obj = (JSONArray) new JSONParser().parse(new FileReader(input));
+		} catch (IOException e) {
+			System.out.println("IO Exception");
+			return false;
+		} catch (ParseException e) {
+			System.out.println("Parse Exception");
+			return false;
+		}
+		boolean valid = true;
 		
-		return true;
+		for(int i = 0; i < obj.size(); i++) {
+			JSONObject jobj = (JSONObject) obj.get(i);
+			
+			String company = (String) jobj.get("name");
+			JSONArray innerObj = (JSONArray) jobj.get("dailyClosePrice");
+			HashMap<String, Double> vals = new HashMap<String, Double>();
+			
+			for(Map.Entry<String, Object> entry : ((HashMap<String,Object>) innerObj.toArray()[0]).entrySet()) {
+			    String key = entry.getKey();
+			    System.out.println("key: " + key);
+			    
+			    Object value = entry.getValue();
+			    double realValue;
+			    if (value.toString().contains("."))
+			    	realValue = (double) value;
+			    else
+			    	realValue = ((Long) value).doubleValue();
+			    
+			    vals.put(key, realValue);
+			}
+			
+			stockMap.put(company, new Stock(company,vals));
+		}
+		
+		return valid;
 	}
 
 }
