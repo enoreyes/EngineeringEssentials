@@ -29,9 +29,15 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.ListIterator;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
-import resources.FileHelper;
+import java.util.ArrayList;
+import java.util.SortedMap;
+import java.text.ParseException;
 
 import jdk.nashorn.internal.objects.annotations.Getter;
 
@@ -47,12 +53,66 @@ public class StockResource {
     private ObjectMapper mapper = new ObjectMapper();
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllStocks(String fileName) throws IOException {
+    public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Stock> stocks = FileHelper.readAllStocks(fileName);
-        return Response.ok().entity(stocks).build();
+        List<Stock> stocks; // something Claire makes
+
+        for (Stock temp : stocks) {
+            if (temp.getName() == ticker) {
+                return Response.ok().entity(temp).build();
+            }
+        }
+        return Response.noContent().build();
     }
 
+    @GET
+    public Response getByStartDate(String dateStart) throws IOException, ParseException {
+        //TODO: Return the list of all of the events in the events.json file
+        List<Stock> stocks; // something Claire makes
 
+        String pattern = "MM/dd/yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        Date date1 = simpleDateFormat.parse(dateStart);
+        List<Stock> stocksByDate = new ArrayList<Stock>();
+
+        for (Stock temp : stocks) {
+            SortedMap<Date, Double> allPrices = temp.getPrices();
+            int count = 0;
+            for (SortedMap.Entry<Date, Double> entry : allPrices.entrySet()) {
+                if (count > 0) {
+                    break;
+                }
+                if (entry.getKey() == date1) {
+                    stocksByDate.add(temp);
+                }
+                ++count;
+            }
+        }
+        return Response.ok().entity(stocksByDate).build();
+    }
+
+    @GET
+    public Response getByStartDate(String dateEnd) throws IOException, ParseException {
+        //TODO: Return the list of all of the events in the events.json file
+        List<Stock> stocks; // something Claire makes
+
+        String pattern = "MM/dd/yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        Date date1 = simpleDateFormat.parse(dateEnd);
+        List<Stock> stocksByDate = new ArrayList<Stock>();
+
+        for (Stock temp : stocks) {
+            SortedMap<Date, Double> allPrices = temp.getPrices();
+
+            ListIterator li = allPrices.listIterator();
+            int count = 0;
+            while(li.hasPrevious() && count < 1) {
+                if (li.previous().getKey() == date1) {
+                    stocksByDate.add(temp);
+                }
+                ++count;
+            }
+        }
+        return Response.ok().entity(stocksByDate).build();
+    }
 }

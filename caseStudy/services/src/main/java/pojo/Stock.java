@@ -77,6 +77,10 @@ public class Stock {
         // if want to return NULL if the date doesn't exist, use REPLACE
     }
 
+    public SortedMap<Date, Double> getPrices() {
+        return prices;
+    }
+
     public Double getPriceByDate(String date) throws ParseException{
         String pattern = "MM/dd/yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
