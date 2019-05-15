@@ -20,13 +20,13 @@ import LineChart from './charts/LineChart';
 class Charts extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            /**
+        this.state = {};
+        /**
              * TODO
              * Initialize a state object to store a JavaScript object returned from the helper method.
              * It can be initialized to be empty.
-             */
-        };
+        */
+        this.componentDidMount = this.componentDidMount.bind(this);
     }
 
 
@@ -37,7 +37,24 @@ class Charts extends React.Component {
 
     dataSourceHelper(props) {
         props = props || this.props;
-        
+    }
+    componentDidMount () {
+        fetch('http://localhost:3000') /** change */
+            .then(response => {
+                if (!response.ok) {
+                    throw Error('Server must be running in order to proceed!')
+                }
+                return response;
+            })
+            .then(data => data.json())
+            .then(data => {
+                this.setState({
+                    content: data
+                });
+                return this.state;
+
+            })
+       
         /**
          * TODO
          * Write a helper method to make an AJAX HTTP request to your service for the
@@ -74,9 +91,12 @@ class Charts extends React.Component {
          *
          *  Don't forget to bind the helper method in the constructor!
          * */
-}
-    
-    render() {
+    }
+
+    render(props) {
+        return (
+        <LineChart data={props.state} />
+        )
         /**
          * TODO
          * Render your LineChart component and pass the data for the chart to display via props
@@ -84,4 +104,4 @@ class Charts extends React.Component {
     }
 }
 
-// Don't forget to export your component!
+export default Charts
