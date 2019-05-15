@@ -53,6 +53,7 @@ public class StockResource {
     private ObjectMapper mapper = new ObjectMapper();
 
     @GET
+    @Path("searchTicker")
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
         List<Stock> stocks; // something Claire makes
@@ -66,6 +67,7 @@ public class StockResource {
     }
 
     @GET
+    @Path("searchDateStart")
     public Response getByStartDate(String dateStart) throws IOException, ParseException {
         //TODO: Return the list of all of the events in the events.json file
         List<Stock> stocks; // something Claire makes
@@ -77,21 +79,16 @@ public class StockResource {
 
         for (Stock temp : stocks) {
             SortedMap<Date, Double> allPrices = temp.getPrices();
-            int count = 0;
-            for (SortedMap.Entry<Date, Double> entry : allPrices.entrySet()) {
-                if (count > 0) {
-                    break;
-                }
-                if (entry.getKey() == date1) {
-                    stocksByDate.add(temp);
-                }
-                ++count;
+
+            if (allPrices.firstKey() == date1) {
+                stocksByDate.add(temp);
             }
         }
         return Response.ok().entity(stocksByDate).build();
     }
 
     @GET
+    @Path("searchDateEnd")
     public Response getByEndDate(String dateEnd) throws IOException, ParseException {
         //TODO: Return the list of all of the events in the events.json file
         List<Stock> stocks; // something Claire makes
