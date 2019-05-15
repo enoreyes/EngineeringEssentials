@@ -55,7 +55,7 @@ public class CompanyResource {
     @GET
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Companiy> companies; // something Claire makes
+        List<Company> companies; // something Claire makes
 
         for (Company c : companies) {
             if (c.getSymbol() == ticker) {
