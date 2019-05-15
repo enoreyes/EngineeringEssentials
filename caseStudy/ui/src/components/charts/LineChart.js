@@ -20,25 +20,65 @@ import Highcharts from 'highcharts';
 class LineChart extends React.Component {
     constructor(props) {
         super(props);
-    }
-
-    componentDidMount() {
-/*        Highcharts.chart('chart', {
-
-            TODO
-            Create a highcharts line chart of your choosing (e.g. https://www.highcharts.com/demo/line-time-series for a demo).
-
+        this.highchartsOptions = {
+            chart: {
+                zoomType: 'x'
+            },
+            title: {
+                text: 'Company Name'
+            },
+            xAxis: {
+                type: 'datetime'
+            },
+            yAxis: {
+                title: {
+                    text: 'Stock value'
+                }
+            },
+            plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[0]],
+                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+                    marker: {
+                        radius: 2
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
             series: [{
                 name: 'Prices',
                 data: this.props.data
             }]
-        });
-*/
+        }
+    }
+
+    componentDidMount() {
+        Highcharts.chart('chart', this.highchartsOptions);      
     }
 
     componentWillReceiveProps(props) {
         console.log("New data received to redraw chart.");
-        
+        const chartData = (props.data).map((props) => {
+            return (
+                <p>{Date.UTC(props)}</p>
+            );
+        });
         /**
          * TODO
          * Parse the data received from props, a Javascript object, to map to a Javascript array
@@ -48,9 +88,8 @@ class LineChart extends React.Component {
         
         /**
          * TODO
-         * Uncomment the line below to pass the data be displayed to the series
-         * this.chart.series[0].setData(data);
-         */
+         * Uncomment the line below to pass the data be displayed to the series*/
+        this.chart.series[0].setData(chartData);
     }
 
     componentWillUnmount() {
@@ -65,4 +104,4 @@ class LineChart extends React.Component {
     }
 }
 
-// Don't forget to export your component!
+export default LineChart;
