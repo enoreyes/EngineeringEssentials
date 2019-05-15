@@ -22,14 +22,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pojo/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pojo/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/StockResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/StockResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/StockResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/StockResourceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/InputValidatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utility/InputValidatorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/misc.xml" afterDir="false" />
@@ -113,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="38" column="66" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="66" />
+            <state relative-caret-position="-973">
+              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -128,13 +120,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="370">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#2498#2505#0" expanded="true" />
-                <element signature="e#3473#3480#0" expanded="true" />
+                <element signature="e#2529#2536#0" expanded="true" />
+                <element signature="e#3494#3501#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -426,17 +418,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/FileHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/FileHelper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="38" column="66" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="66" />
+        <state relative-caret-position="-973">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -448,13 +434,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="370">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2498#2505#0" expanded="true" />
-            <element signature="e#3473#3480#0" expanded="true" />
+            <element signature="e#2529#2536#0" expanded="true" />
+            <element signature="e#3494#3501#0" expanded="true" />
           </folding>
         </state>
       </provider>

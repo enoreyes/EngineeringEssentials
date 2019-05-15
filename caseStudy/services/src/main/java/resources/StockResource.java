@@ -92,7 +92,7 @@ public class StockResource {
     }
 
     @GET
-    public Response getByStartDate(String dateEnd) throws IOException, ParseException {
+    public Response getByEndDate(String dateEnd) throws IOException, ParseException {
         //TODO: Return the list of all of the events in the events.json file
         List<Stock> stocks; // something Claire makes
 
@@ -104,13 +104,8 @@ public class StockResource {
         for (Stock temp : stocks) {
             SortedMap<Date, Double> allPrices = temp.getPrices();
 
-            ListIterator li = allPrices.listIterator();
-            int count = 0;
-            while(li.hasPrevious() && count < 1) {
-                if (li.previous().getKey() == date1) {
-                    stocksByDate.add(temp);
-                }
-                ++count;
+            if (allPrices.lastKey() == date1) {
+                stocksByDate.add(temp);
             }
         }
         return Response.ok().entity(stocksByDate).build();
