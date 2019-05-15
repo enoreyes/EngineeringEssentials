@@ -19,14 +19,12 @@
       <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pojo/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/FileHelper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pojo/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Company.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pojo/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Stock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/FileHelper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/StockResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/StockResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" afterDir="false" />
@@ -130,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="98" column="38" lean-forward="true" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+            <state relative-caret-position="115">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -450,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="98" column="38" lean-forward="true" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+        <state relative-caret-position="115">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
