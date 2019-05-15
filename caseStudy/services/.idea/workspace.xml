@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1d5c784-8308-41d3-bba8-6e740dc0ec20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/FileHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
@@ -22,9 +23,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/companyInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/companyInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/historicalStockData.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/historicalStockData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/companyInfo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/historicalStockData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pojo/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Company.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pojo/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Stock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" afterDir="false" />
@@ -55,9 +56,9 @@
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/java/utility/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/java/utility/FileHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/test/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/allParticipatingCountries.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/allParticipatingCountries.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/events.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/single-event.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/single-event.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/allParticipatingCountries.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/events.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/single-event.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example10Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example10Resource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example11Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example11Resource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example12Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example12Resource.class" afterDir="false" />
@@ -89,16 +90,16 @@
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/solutions/Example9SolutionResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/solutions/Example9SolutionResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/CreateEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/CreateEvents.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/CustomJsonMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/CustomJsonMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper$4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/FileHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/LocalDateDeserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/LocalDateDeserializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/LocalDateSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/utility/LocalDateSerializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTest$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTestSolutions$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTestSolutions$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTestSolutions$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTestSolutions.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/test-classes/resources/ResourcesTestSolutions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/ui/starter_code/cards-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/ui/starter_code/cards-app/package-lock.json" afterDir="false" />
@@ -122,16 +123,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="-681">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-                <element signature="e#2035#2036#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,23 +139,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="390">
+              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Company.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/FileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-137">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -186,24 +192,24 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/StockResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/pojo/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/pojo/Stock.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/FileHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/StockResource.java" />
       </list>
     </option>
   </component>
@@ -396,13 +402,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pojo/main.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utility/InputValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -414,6 +413,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,42 +443,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/readme.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data/historicalStockData.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="-137">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Company.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="390">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="-681">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2035#2036#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>

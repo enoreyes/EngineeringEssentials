@@ -21,15 +21,38 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
+import pojo.Stock;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import resources.FileHelper;
 
 import jdk.nashorn.internal.objects.annotations.Getter;
 
+
+@Path("stock")
 // TODO - add your @Path here
 public class StockResource {
 
     // TODO - Add a @GET resource to get stock data
     // Your service should return data based on 3 inputs
     // Stock ticker, start date and end date
+
+    private ObjectMapper mapper = new ObjectMapper();
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllStocks(String fileName) throws IOException {
+        //TODO: Return the list of all of the events in the events.json file
+        List<Stock> stocks = FileHelper.readAllStocks(fileName);
+        return Response.ok().entity(stocks).build();
+    }
 
 
 }
