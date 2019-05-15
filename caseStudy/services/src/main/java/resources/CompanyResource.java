@@ -23,6 +23,7 @@ import java.io.IOException;
 import pojo.Company;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
+import utility.InputValidator;
 
 // TODO - add your @Path here
 @Path("company")
@@ -34,7 +35,9 @@ public class CompanyResource {
     @GET
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Company> companies; // something Claire makes
+        InputValidator iv = new InputValidator();
+        iv.validateJSON("companyInfo.json")
+        List<Company> companies = iv.hMap.keys();
 
         for (Company c : companies) {
             if (c.getSymbol() == ticker) {
