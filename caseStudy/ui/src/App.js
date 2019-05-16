@@ -22,8 +22,10 @@ import './style/App.css';
  * Import your components
  */
 import Date from './components/Date';
+import JohnData from './data/john_posts.json';
+import JaneData from './data/jane_posts.json';
 //import StockTicker from './components/StockTicker';
-//import Charts from './components/Charts';
+import LineChart from './components/charts/LineChart';
 
 
 class App extends React.Component{
@@ -46,6 +48,8 @@ class App extends React.Component{
     render () {
       return (
           <div className="page-display">
+            <h1>We Worked On This All Night In The Lobby Of Conrad</h1>
+            <LineChart dataOne={JohnData.data} dataTwo={JaneData.data} />
               <div className="input">
               {/**
                * TODO
@@ -57,16 +61,21 @@ class App extends React.Component{
                * Don't forget to bind these methods!
                */}
                 <div>
-                  <h4>Start Date</h4>
                   <div className="date-range">
-                    <Date onSubmit={this.handleSubmit}/>
+                    <h4>End Date</h4>
+                    <Date onChange={this.handleSubmit}/>
                   </div>
-                  <h4>End Date</h4>
+                </div>
+                <div>
                   <div className="date-range">
-                    <Date onSubmit={this.handleSubmit}/>
+                    <h4>Start Date</h4>
+                    <Date onChange={this.handleSubmit}/>
                   </div>
                 </div>
               </div>
+
+
+            
 
 
                  {/**
@@ -77,7 +86,7 @@ class App extends React.Component{
                    *  be maintained as a state object.
                    *  http://reactpatterns.com/#conditional-rendering
                    */}
-
+            
           </div>
       );
     }
