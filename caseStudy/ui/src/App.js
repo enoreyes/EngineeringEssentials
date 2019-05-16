@@ -62,13 +62,13 @@ class App extends React.Component{
                */}
                 <div>
                   <div className="date-range">
-                    <h4>End Date</h4>
+                    <h4>Start Date</h4>
                     <Date onChange={this.handleSubmit}/>
                   </div>
                 </div>
                 <div>
                   <div className="date-range">
-                    <h4>Start Date</h4>
+                    <h4>End Date</h4>
                     <Date onChange={this.handleSubmit}/>
                   </div>
                 </div>
