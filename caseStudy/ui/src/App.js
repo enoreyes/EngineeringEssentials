@@ -16,25 +16,27 @@
 
 import React from 'react';
 import './style/App.css';
-import Charts from './components/Charts';
+
 /**
  * TODO:
  * Import your components
  */
+import Date from './components/Date';
+import StockTicker from './components/StockTicker';
+import Charts from './components/Charts';
 
 
 class App extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            userInput: '',
-            data: props.data
             /**
              * TODO
              * Add state objects for the user inputs and anything else you may need to render the highchart.
              */
+
         };
-        this.handleSubmit = this.handleSubmit.bind(this);
+
     }
 
 
@@ -56,6 +58,7 @@ class App extends React.Component{
                */}
 
                 <div className="date-range">
+                  <Date onSubmit={this.handleSubmit}/>
 
                 </div>
               </div>
