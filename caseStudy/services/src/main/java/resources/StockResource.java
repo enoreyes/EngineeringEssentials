@@ -20,13 +20,15 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import pojo.Stock;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.SortedMap;
 import java.text.ParseException;
+import utility.InputValidator;
+
 
 @Path("stock")
 // TODO - add your @Path here
@@ -40,7 +42,12 @@ public class StockResource {
     @Path("searchTicker")
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Stock> stocks; // something Claire makes
+        InputValidator iv = new InputValidator();
+        HashMap<String, Stock> stocksTemp = iv.returnStockMap();
+        List<Stock> stocks = new ArrayList();
+        for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
+            stocks.add(entry.getValue());
+        }
 
         for (Stock temp : stocks) {
             if (temp.getName() == ticker) {
@@ -54,7 +61,12 @@ public class StockResource {
     @Path("searchDateStart")
     public Response getByStartDate(String dateStart) throws IOException, ParseException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Stock> stocks; // something Claire makes
+        InputValidator iv = new InputValidator();
+        HashMap<String, Stock> stocksTemp = iv.returnStockMap();
+        List<Stock> stocks = new ArrayList();
+        for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
+            stocks.add(entry.getValue());
+        }
 
         String pattern = "MM/dd/yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
@@ -75,7 +87,12 @@ public class StockResource {
     @Path("searchDateEnd")
     public Response getByEndDate(String dateEnd) throws IOException, ParseException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Stock> stocks; // something Claire makes
+        InputValidator iv = new InputValidator();
+        HashMap<String, Stock> stocksTemp = iv.returnStockMap();
+        List<Stock> stocks = new ArrayList();
+        for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
+            stocks.add(entry.getValue());
+        }
 
         String pattern = "MM/dd/yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
