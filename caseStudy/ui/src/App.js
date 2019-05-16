@@ -22,8 +22,8 @@ import './style/App.css';
  * Import your components
  */
 import Date from './components/Date';
-import StockTicker from './components/StockTicker';
-import Charts from './components/Charts';
+//import StockTicker from './components/StockTicker';
+//import Charts from './components/Charts';
 
 
 class App extends React.Component{
@@ -56,10 +56,15 @@ class App extends React.Component{
                * highchart should be displayed by changing the state of that boolean.
                * Don't forget to bind these methods!
                */}
-
-                <div className="date-range">
-                  <Date onSubmit={this.handleSubmit}/>
-
+                <div>
+                  <h4>Start Date</h4>
+                  <div className="date-range">
+                    <Date onSubmit={this.handleSubmit}/>
+                  </div>
+                  <h4>End Date</h4>
+                  <div className="date-range">
+                    <Date onSubmit={this.handleSubmit}/>
+                  </div>
                 </div>
               </div>
 
