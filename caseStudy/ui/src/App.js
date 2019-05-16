@@ -22,9 +22,8 @@ import './style/App.css';
  * Import your components
  */
 import Date from './components/Date';
-import Google from './data/google.json';
-//import StockTicker from './components/StockTicker';
-import LineChart from './components/charts/LineChart';
+import StockTicker from './components/StockTicker';
+//import Charts from './components/Charts';
 
 
 class App extends React.Component{
@@ -47,9 +46,6 @@ class App extends React.Component{
     render () {
       return (
           <div className="page-display">
-            <h1>Stock Visualization</h1>
-            <h3>Angie Chang - Lisa Kim - Eno Reyes - Katherine Yang - Claire Zheng</h3>
-            <LineChart dataOne={Google.data}/>
               <div className="input">
               {/**
                * TODO
@@ -61,21 +57,20 @@ class App extends React.Component{
                * Don't forget to bind these methods!
                */}
                 <div>
+                  <h4>Start Date</h4>
                   <div className="date-range">
-                    <h4>Start Date</h4>
-                    <Date onChange={this.handleSubmit}/>
+                    <Date onChange={this.handleChange}/>
+                  </div>
+                  <h4>End Date</h4>
+                  <div className="date-range">
+                    <Date onChange={this.handleChange}/>
                   </div>
                 </div>
-                <div>
-                  <div className="date-range">
-                    <h4>End Date</h4>
-                    <Date onChange={this.handleSubmit}/>
+                <h4>Company Name</h4>
+                  <div className="stock-ticker">
+                    <StockTicker onChange={this.handleChange}/>
                   </div>
-                </div>
               </div>
-
-
-            
 
 
                  {/**
@@ -86,7 +81,7 @@ class App extends React.Component{
                    *  be maintained as a state object.
                    *  http://reactpatterns.com/#conditional-rendering
                    */}
-            
+
           </div>
       );
     }
