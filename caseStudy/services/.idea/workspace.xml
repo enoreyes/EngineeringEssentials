@@ -36,6 +36,10 @@
       <change beforePath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/resources/StockResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/StockResourceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/components/Charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/components/Charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/components/Date.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/components/Date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/components/StockTicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/components/StockTicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/components/charts/LineChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/components/charts/LineChart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/misc.xml" afterDir="false" />
@@ -58,6 +62,9 @@
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/java/utility/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/java/utility/FileHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/main/main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/src/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/allParticipatingCountries.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/allParticipatingCountries.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/events.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/single-event.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/backup/single-event.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example10Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example10Resource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example11Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example11Resource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example12Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/EngineeringEssentialsServices/target/classes/examples/Example12Resource.class" afterDir="false" />
@@ -119,10 +126,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-681">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="-194">
+              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
                 <element signature="e#3224#3231#0" expanded="true" />
                 <element signature="e#4221#4228#0" expanded="true" />
               </folding>
@@ -210,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -296,6 +304,12 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="stock-visualization-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -380,7 +394,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -391,7 +405,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4762684" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.65630114" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1816694" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.492635" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -543,10 +557,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-681">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="-194">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="e#3224#3231#0" expanded="true" />
             <element signature="e#4221#4228#0" expanded="true" />
           </folding>

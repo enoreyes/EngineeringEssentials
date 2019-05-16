@@ -21,6 +21,10 @@ import './style/App.css';
  * TODO:
  * Import your components
  */
+import Date from './components/Date';
+import Google from './data/google.json';
+//import StockTicker from './components/StockTicker';
+import LineChart from './components/charts/LineChart';
 
 
 class App extends React.Component{
@@ -31,17 +35,17 @@ class App extends React.Component{
              * TODO
              * Add state objects for the user inputs and anything else you may need to render the highchart.
              */
+
         };
 
     }
 
-
-
-
-
     render () {
       return (
           <div className="page-display">
+            <h1>Stock Visualization</h1>
+            <h3>Angie Chang - Lisa Kim - Eno Reyes - Katherine Yang - Claire Zheng</h3>
+            <LineChart dataOne={Google.data}/>
               <div className="input">
               {/**
                * TODO
@@ -52,12 +56,19 @@ class App extends React.Component{
                * highchart should be displayed by changing the state of that boolean.
                * Don't forget to bind these methods!
                */}
-
-                <div className="date-range">
-
+                <div>
+                  <div className="date-range">
+                    <h4>Start Date</h4>
+                    <Date onChange={this.handleSubmit}/>
+                  </div>
+                </div>
+                <div>
+                  <div className="date-range">
+                    <h4>End Date</h4>
+                    <Date onChange={this.handleSubmit}/>
+                  </div>
                 </div>
               </div>
-
 
                  {/**
                    *  TODO
@@ -67,7 +78,7 @@ class App extends React.Component{
                    *  be maintained as a state object.
                    *  http://reactpatterns.com/#conditional-rendering
                    */}
-
+            
           </div>
       );
     }

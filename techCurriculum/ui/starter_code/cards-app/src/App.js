@@ -18,6 +18,9 @@ import React from 'react';
 import Title from './components/Title';
 import Card from './components/Card';
 import CardForm from './components/CardForm';
+import LineChart from './components/LineChart';
+import JohnData from './data/john_posts.json';
+import JaneData from './data/jane_posts.json';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,35 +29,44 @@ class App extends React.Component {
       cards: [
         {
           author: 'John Smith',
-          text: 'React is so cool!'
+          text: 'React is so cool!',
+          tags: []
         },
         {
           author: 'Jane Doe',
-          text: 'I use React for all my projects!'
+          text: 'I use React for all my projects!',
+          tags: []
         }
       ]
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit() {
-
+  handleSubmit(author, message, tags, dateStamp) {
+    const newCard = {author: author, text: message, tags: tags, dateStamp: dateStamp};
+    const cards = [...this.state.cards, newCard];
+    this.setState({cards: cards});
   }
   
   render() {
     const cards = this.state.cards.map((card, index) => (
       <Card author={card.author}
         text={card.text}
-        key={index} />
+        key={index}
+        tags={card.tags}
+        dateStamp={card.dateStamp} />
     ));
 
     return (
-      <div id='app-body'>
-        <div id='left-panel'>
-          <Title />
-          { cards }
+      <div>
+        <div id='app-body'>
+          <div id='left-panel'>
+            <Title />
+            { cards }
+          </div>
+          <CardForm onSubmit={this.handleSubmit} />
         </div>
-        <CardForm onSubmit={this.handleSubmit} />
+        <LineChart dataOne={JohnData.data} dataTwo={JaneData.data} />
       </div>
     );
   }
