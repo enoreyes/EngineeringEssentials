@@ -22,8 +22,7 @@ import './style/App.css';
  * Import your components
  */
 import Date from './components/Date';
-import JohnData from './data/john_posts.json';
-import JaneData from './data/jane_posts.json';
+import Google from './data/google.json';
 //import StockTicker from './components/StockTicker';
 import LineChart from './components/charts/LineChart';
 
@@ -48,8 +47,9 @@ class App extends React.Component{
     render () {
       return (
           <div className="page-display">
-            <h1>We Worked On This All Night In The Lobby Of Conrad</h1>
-            <LineChart dataOne={JohnData.data} dataTwo={JaneData.data} />
+            <h1>Stock Visualization</h1>
+            <h3>Angie Chang - Lisa Kim - Eno Reyes - Katherine Yang - Claire Zheng</h3>
+            <LineChart dataOne={Google.data}/>
               <div className="input">
               {/**
                * TODO
