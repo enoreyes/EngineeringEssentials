@@ -49,7 +49,7 @@
 import React from 'react';
 //import {Typeahead} from 'react-bootstrap-typeahead'; UNCOMMENT this line if you are using the react-bootstrap-typeeahead component
 import {Typeahead} from 'react-bootstrap-typeahead';
-var Typeahead = require('react-bootstrap-typeahead').Typeahead;
+// var Typeahead = require('react-bootstrap-typeahead').Typeahead;
 
 /* If you chose to use react-boostrap-typeahead, look at AsyncTypeahead for a component that 
  * provides auto-complete suggestions as you type. This would require adding a search handler 
@@ -57,6 +57,8 @@ var Typeahead = require('react-bootstrap-typeahead').Typeahead;
  * https://github.com/ericgio/react-bootstrap-typeahead/blob/master/example/examples/AsyncExample.react.js
  */
 
+// eslint-disable-next-line
+/* eslint-disable */
 
 class StockTicker extends React.Component {
 
@@ -74,7 +76,7 @@ class StockTicker extends React.Component {
      * If you are having difficulty with this, you may hard code the options array from the company data provided for the
      * services.
      */
-    options : []
+    options = [ATVI, ADBE, AKAM, ALXN, GOOG, AMZN, AAL, AMGN, ADI, AAPL, AMAT, ADSK, ADP, BIDU, BIIB, BMRN, AVGO, CA, CELG, CERN, CHTR, CHKP, CTAS, CSCO, CTXS, CTSH, CMCSA, COST, CSX, CTRP, XRAY, DISCA, DISCK, DISH, DLTR, EBAY, EA, EXPE, ESRX, FB, FAST, FISV, GILD, HAS, HSIC, HOLX, IDXX, ILMN, INCY]
 
     constructor(props) {
         super(props);
@@ -101,8 +103,8 @@ class StockTicker extends React.Component {
             // selectHintOnEnter: false,
             // labelKey: null,
             // filterBy: 'callback',
-            align= 'justified',
-            filterBy= 'callback',
+            align: 'justified',
+            filterBy: 'callback',
             labelKey: null,
             minLength: 0,
             placeholder: null,
@@ -124,19 +126,19 @@ class StockTicker extends React.Component {
              * to handle errors). If you successfully retrieve this information, you can set the state objects
              * and render it.
              */
-            this.setState({symbol = event[0]});
-            this.setState({showname = event[1]});
-            this.setState({showcity = event[2]});
-            this.setState({showstate = event[3]});
-            this.setState({showsector = event[4]});
-            this.setState({showindustry = event[5]});
+            this.setState({symbol : event[0]});
+            this.setState({showname : event[1]});
+            this.setState({showcity : event[2]});
+            this.setState({showstate : event[3]});
+            this.setState({showsector : event[4]});
+            this.setState({showindustry : event[5]});
             this.setState({showinfo: true});
 
             //this.props.onChange(..);  Call this.props.onChange with the selected symbol to propagate it
             // to the App component, which will handle it via its own onChange prop,
             // ultimately  used to fetch the data for the LineChart component.
             // ?
-            this.props.onChange(e.target.value);
+            this.props.onChange(event.target.value);
         }
         else {
             this.setState({showinfo: false});
@@ -201,8 +203,8 @@ class StockTicker extends React.Component {
                      *  be maintained as a state object.
                      *  http://reactpatterns.com/#conditional-rendering
                      */
-                    // ?
-                    // this.componentWillReceiveProps(nextProps) {
+                    // {
+                    //     this.symbol!=symbol ? (this.handleChange) : ();
                     // }
                 }
             </div>
