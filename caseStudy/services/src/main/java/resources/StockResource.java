@@ -17,29 +17,17 @@
 package resources;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import pojo.Stock;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.ListIterator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
 import java.util.SortedMap;
 import java.text.ParseException;
-
-import jdk.nashorn.internal.objects.annotations.Getter;
+import utility.InputValidator;
 
 
 @Path("stock")
@@ -50,13 +38,22 @@ public class StockResource {
     // Your service should return data based on 3 inputs
     // Stock ticker, start date and end date
 
-    private ObjectMapper mapper = new ObjectMapper();
+    @GET
+    @Path("go")
+    public Response getResponse() throws IOException {
+        return Response.status(Response.Status.OK).entity("Congratulations!").build();
+    }
 
     @GET
     @Path("searchTicker")
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Stock> stocks; // something Claire makes
+        InputValidator iv = new InputValidator();
+        HashMap<String, Stock> stocksTemp = iv.returnStockMap();
+        List<Stock> stocks = new ArrayList();
+        for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
+            stocks.add(entry.getValue());
+        }
 
         for (Stock temp : stocks) {
             if (temp.getName() == ticker) {
@@ -70,7 +67,12 @@ public class StockResource {
     @Path("searchDateStart")
     public Response getByStartDate(String dateStart) throws IOException, ParseException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Stock> stocks; // something Claire makes
+        InputValidator iv = new InputValidator();
+        HashMap<String, Stock> stocksTemp = iv.returnStockMap();
+        List<Stock> stocks = new ArrayList();
+        for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
+            stocks.add(entry.getValue());
+        }
 
         String pattern = "MM/dd/yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
@@ -91,7 +93,12 @@ public class StockResource {
     @Path("searchDateEnd")
     public Response getByEndDate(String dateEnd) throws IOException, ParseException {
         //TODO: Return the list of all of the events in the events.json file
-        List<Stock> stocks; // something Claire makes
+        InputValidator iv = new InputValidator();
+        HashMap<String, Stock> stocksTemp = iv.returnStockMap();
+        List<Stock> stocks = new ArrayList();
+        for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
+            stocks.add(entry.getValue());
+        }
 
         String pattern = "MM/dd/yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
