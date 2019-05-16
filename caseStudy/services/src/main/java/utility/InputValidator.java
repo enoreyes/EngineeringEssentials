@@ -30,6 +30,11 @@ public class InputValidator {
     public static HashMap<String,Company> companyMap;
     public static HashMap<String, Stock> stockMap;
     JSONArray obj;
+    
+    public InputValidator() {
+    	companyMap = new HashMap<String, Company>();
+    	stockMap = new HashMap<String, Stock>();
+    }
 
     public HashMap<String, Stock> returnStockMap() {
         return stockMap;
@@ -43,9 +48,9 @@ public class InputValidator {
     public boolean validateJSON(String input) throws java.text.ParseException {
         if (nullCheck(input))
             return false;
-        if (input.equals("historicalStockData.json")) {
+        if (input.contains("historicalStockData.json")) {
             return populateStock(input);
-        } else if (input.contentEquals("companyInfo.json")) {
+        } else if (input.contains("companyInfo.json")) {
             return populateCompany(input);
         } else
             return false;
@@ -133,7 +138,6 @@ public class InputValidator {
 
             for(Map.Entry<String, Object> entry : ((HashMap<String,Object>) innerObj.toArray()[0]).entrySet()) {
                 String key = entry.getKey();
-                System.out.println("key: " + key);
 
                 Object value = entry.getValue();
                 double realValue;
