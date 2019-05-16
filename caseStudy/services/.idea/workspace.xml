@@ -21,18 +21,21 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/pojo/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/Stock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/CompanyResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/CompanyResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/StockResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/StarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/StarterApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utility/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/InputValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/InputValidatorTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/companyInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/companyInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/historicalStockData.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/historicalStockData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pojo/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Company.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pojo/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Stock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/CompanyResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/StockResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/StockResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/StarterApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/StarterApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/InputValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/CompanyResourceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/resources/StockResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/StockResourceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/InputValidatorTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../techCurriculum/services/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../techCurriculum/services/.idea/misc.xml" afterDir="false" />
@@ -113,11 +116,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="-968">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -129,38 +132,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/CompanyResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="-33">
+              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utility/InputValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-797">
-              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#5103#5119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/StarterApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
-              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="-238">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/main/java/pojo/Stock.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/CompanyResource.java" />
         <option value="$PROJECT_DIR$/src/main/server/StarterApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/StockResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/StarterApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/StockResource.java" />
       </list>
     </option>
   </component>
@@ -335,7 +321,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2473525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -347,7 +332,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.07364976" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4762684" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30278233" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6661211" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -468,10 +453,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="2700" selection-start-line="2700" selection-end-line="2700" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="423" column="24" selection-start-line="423" selection-start-column="24" selection-end-line="423" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utility/InputValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-797">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        <state relative-caret-position="257">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -486,18 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/CompanyResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="-33">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -507,9 +496,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/StarterApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="-238">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/StockResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

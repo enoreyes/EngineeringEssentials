@@ -44,6 +44,22 @@ public class StockResource {
         return Response.status(Response.Status.OK).entity("Congratulations!").build();
     }
 
+    /*
+    @GET
+    @Path("thing")
+    public Response getResponse2() throws IOException {
+        InputValidator iv = new InputValidator();
+        HashMap<String, Stock> stocksTemp = iv.returnStockMap();
+        List<Stock> stocks = new ArrayList();
+
+        for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
+            stocks.add(entry.getValue());
+        }
+
+        return Response.ok().entity(stocks).build();
+    }
+    */
+
     @GET
     @Path("searchTicker")
     public Response getByTicker(String ticker) throws IOException {
