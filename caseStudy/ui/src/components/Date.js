@@ -40,7 +40,7 @@ class Date extends React.Component {
         this.state = {
             date: moment()
         };
-
+        this.handleChange = this.handleChange.bind(this);
     }
 
     componentDidMount() {
