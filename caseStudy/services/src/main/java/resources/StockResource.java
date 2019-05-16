@@ -19,6 +19,8 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import pojo.Stock;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -44,24 +46,24 @@ public class StockResource {
         return Response.status(Response.Status.OK).entity("Congratulations!").build();
     }
 
-    /*
     @GET
-    @Path("thing")
-    public Response getResponse2() throws IOException {
+    @Path("ok")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getByTicker2(String ticker) throws ParseException {
+        //TODO: Return the list of all of the events in the events.json file
         InputValidator iv = new InputValidator();
+        iv.validateJSON("C:\\Users\\lisakimstar\\Documents\\GoldmanSachs\\EngineeringEssentials\\caseStudy\\services\\src\\main\\resources\\data\\historicalStockData.json");
         HashMap<String, Stock> stocksTemp = iv.returnStockMap();
         List<Stock> stocks = new ArrayList();
-
         for(HashMap.Entry<String, Stock> entry : stocksTemp.entrySet()) {
             stocks.add(entry.getValue());
         }
-
-        return Response.ok().entity(stocks).build();
+        return Response.ok(stocks).build();
     }
-    */
 
     @GET
     @Path("searchTicker")
+    @Produces(MediaType.APPLICATION_JSON)
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
         InputValidator iv = new InputValidator();

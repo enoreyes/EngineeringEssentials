@@ -33,6 +33,11 @@ public class Stock {
     public String name;
     public SortedMap<Date, Double> prices = new TreeMap();
 
+    public Stock() {
+        this.name = null;
+        this.prices = null;
+    }
+
     public Stock(String name, HashMap<String, Double> temp) throws ParseException{
         this.name = name;
         for (HashMap.Entry<String, Double> entry : temp.entrySet()) {

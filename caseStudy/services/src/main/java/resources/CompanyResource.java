@@ -22,7 +22,8 @@ import java.io.IOException;
 
 import pojo.Company;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -38,6 +39,8 @@ public class CompanyResource {
     // Your service should return data for a given stock ticker
 
     @GET
+    @Path("thing")
+    @Produces(MediaType.APPLICATION_JSON)
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
         InputValidator iv = new InputValidator();
@@ -52,7 +55,7 @@ public class CompanyResource {
                 return Response.ok().entity(c).build();
             }
         }
-        return Response.noContent().build();
+        return Response.status(Response.Status.OK).entity("No company found by that ticker.").build();
     }
 
 }

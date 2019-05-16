@@ -3,6 +3,8 @@ package server;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import io.dropwizard.setup.Environment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,7 +58,7 @@ public class StarterApp extends Application<Configuration> {
     @Override
     public void run(Configuration c, Environment e) throws Exception {
         LOGGER.info("Registering REST resources");
-        //e.jersey().register(new CompanyResource());
+        e.jersey().register(new CompanyResource());
         e.jersey().register(new StockResource());
 
         LOGGER.info("Successfully started REST Service.");
