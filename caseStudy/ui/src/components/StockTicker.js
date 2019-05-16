@@ -57,9 +57,6 @@ import {Typeahead} from 'react-bootstrap-typeahead';
  * https://github.com/ericgio/react-bootstrap-typeahead/blob/master/example/examples/AsyncExample.react.js
  */
 
-// eslint-disable-next-line
-/* eslint-disable */
-
 class StockTicker extends React.Component {
 
     /**
@@ -76,7 +73,7 @@ class StockTicker extends React.Component {
      * If you are having difficulty with this, you may hard code the options array from the company data provided for the
      * services.
      */
-    options = [ATVI, ADBE, AKAM, ALXN, GOOG, AMZN, AAL, AMGN, ADI, AAPL, AMAT, ADSK, ADP, BIDU, BIIB, BMRN, AVGO, CA, CELG, CERN, CHTR, CHKP, CTAS, CSCO, CTXS, CTSH, CMCSA, COST, CSX, CTRP, XRAY, DISCA, DISCK, DISH, DLTR, EBAY, EA, EXPE, ESRX, FB, FAST, FISV, GILD, HAS, HSIC, HOLX, IDXX, ILMN, INCY]
+    options = ['ATVI', 'ADBE', 'AKAM', 'ALXN', 'GOOG', 'AMZN', 'AAL', 'AMGN', 'ADI', 'AAPL', 'AMAT', 'ADSK', 'ADP', 'BIDU', 'BIIB', 'BMRN', 'AVGO', 'CA', 'CELG', 'CERN', 'CHTR', 'CHKP', 'CTAS', 'CSCO', 'CTXS', 'CTSH', 'CMCSA', 'COST', 'CSX','CTRP', 'XRAY', 'DISCA', 'DISCK', 'DISH', 'DLTR', 'EBAY', 'EA', 'EXPE', 'ESRX', 'FB', 'FAST', 'FISV', 'GILD', 'HAS', 'HSIC', 'HOLX', 'IDXX', 'ILMN', 'INCY']
 
     constructor(props) {
         super(props);
