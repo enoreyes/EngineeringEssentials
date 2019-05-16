@@ -22,7 +22,12 @@ import java.io.IOException;
 
 import pojo.Company;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+
+import pojo.Stock;
 import utility.InputValidator;
 
 // TODO - add your @Path here
@@ -36,8 +41,11 @@ public class CompanyResource {
     public Response getByTicker(String ticker) throws IOException {
         //TODO: Return the list of all of the events in the events.json file
         InputValidator iv = new InputValidator();
-        iv.validateJSON("companyInfo.json")
-        List<Company> companies = iv.hMap.keys();
+        HashMap<String, Company> companiesTemp = iv.returnCompanyMap();
+        List<Company> companies = new ArrayList();
+        for(HashMap.Entry<String, Company> entry : companiesTemp.entrySet()) {
+            companies.add(entry.getValue());
+        }
 
         for (Company c : companies) {
             if (c.getSymbol() == ticker) {
@@ -46,6 +54,5 @@ public class CompanyResource {
         }
         return Response.noContent().build();
     }
-
 
 }
